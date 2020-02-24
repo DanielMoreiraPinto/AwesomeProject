@@ -1,11 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
 import React from 'react';
 import {
   SafeAreaView,
@@ -13,102 +5,69 @@ import {
   ScrollView,
   View,
   Text,
+  Image,
   StatusBar,
+  Button,
 } from 'react-native';
-
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
 
 const App: () => React$Node = () => {
   return (
     <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
-          )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
-          </View>
-        </ScrollView>
-      </SafeAreaView>
+      <View style = {styles.container}>
+        <Image
+          style={styles.image_welcome}
+          source={require('./img/home_welcome.jpg')}
+        />
+        <Text style={styles.text_welcome}> Bem-vindo! </Text>
+        
+        <Button 
+          onPress={() => {
+            alert("Tela de informação");
+          }}
+          style={styles.button_welcome}
+          title="Inicie sua aventura pela computação">
+        </Button>
+
+        <Text style={styles.header}> Dica do dia: [ícone de lâmpada] </Text>
+        <Text style={styles.text}> [Dica com bela imagem fosca atrás] </Text>
+      </View>
     </>
   );
 };
 
 const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
+  text_welcome: {
+    color: "#000000",
+    fontSize: 50,
+    fontWeight: "bold"
   },
-  engine: {
-    position: 'absolute',
-    right: 0,
+
+  image_welcome: {
+    height: 200,
+    width: 400
   },
-  body: {
-    backgroundColor: Colors.white,
+
+  button_welcome: {
+    color: "#0a0f52"
   },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+
+  container: {
+    flex: 1,
+    flexDirection: "column",
+    flexWrap: "wrap",
+    alignItems: "center",
+    alignContent: "stretch"
   },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
+  
+  text: {
+    color : "#000000",
+    fontSize: 20
   },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
-  },
+
+  header: {
+    color : "#000000",
+    fontSize: 25
+  }
 });
 
 export default App;
