@@ -1,4 +1,14 @@
-<View style={styles.container1}>
+import React,{Component} from 'react'
+import {
+  StyleSheet,
+  View,
+  Button,
+} from 'react-native';
+
+export class TelaExploracao extends Component {
+    render() {
+        return (
+            <View style={styles.container1}>
     <Button
         onPress={() => {
         alert("Tela de arte");
@@ -32,13 +42,18 @@
     >
     </Button>
 </View>
+        );
+    }
+}
 
-botao: {
-    color: "#0a0f52"
-  },
-
-  container1: {
-    flex: 1,
-    justifyContent: "space-around",
-    alignItems: "center"
-  }
+const styles = StyleSheet.create({
+    botao: {
+        color: "#0a0f52"
+        },
+        
+        container1: {
+        flex: 1,
+        justifyContent: "space-around",
+        alignItems: "center"
+        }
+})

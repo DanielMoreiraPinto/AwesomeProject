@@ -1,27 +1,17 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  Image,
-  StatusBar,
-  Button,
-  ImageBackground,
-  SectionList,
-} from 'react-native';
+import {TelaPrincipal} from './src/TelaPrincipal'; 
+import {TelaProfissional} from './src/TelaProfissional';
+import {TelaHistoria} from './src/TelaHistoria';
+import {TelaExploracao} from './src/TelaExploracao';
+import {TelaCuriosidades} from './src/TelaCuriosidades';
+import {TelaArte} from './src/TelaArte';
 
 const App: () => React$Node = () => {
   return (
     <>
-      
+      <TelaArte/>
     </>
   );
 };
-
-const styles = StyleSheet.create({
-  
-});
 
 export default App;
