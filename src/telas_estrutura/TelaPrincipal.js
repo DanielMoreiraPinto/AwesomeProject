@@ -13,7 +13,7 @@ export function TelaPrincipal({navigation}) {
     <View style = {styles.container1}>
       <ImageBackground 
         style={styles.image_welcome}
-        source={require('../img/home_welcome.jpg')}
+        source={require('../../img/home_welcome.jpg')}
       >
         <Text style={styles.text_welcome}> Bem-vindo! </Text>
       </ImageBackground>
@@ -29,7 +29,7 @@ export function TelaPrincipal({navigation}) {
         <Text style={styles.header}> Dica do dia: </Text>
         <Image
           style={styles.image_dica}
-          source={require('../img/lampada_dica.png')}
+          source={require('../../img/lampada_dica.png')}
         />
         </View>
         <Text style={styles.text}> [Dica com bela imagem fosca atrás] </Text>
