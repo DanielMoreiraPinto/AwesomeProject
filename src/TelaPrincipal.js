@@ -1,4 +1,4 @@
-import React,{Component} from 'react'
+import React from 'react'
 import {
   StyleSheet,
   View,
@@ -8,38 +8,34 @@ import {
   ImageBackground,
 } from 'react-native';
 
-export class TelaPrincipal extends Component {
-  render() {
-    return (
-      <View style = {styles.container1}>
-        <ImageBackground 
-          style={styles.image_welcome}
-          source={require('../img/home_welcome.jpg')}
-        >
-          <Text style={styles.text_welcome}> Bem-vindo! </Text>
-        </ImageBackground>
+export function TelaPrincipal({navigation}) {
+  return (
+    <View style = {styles.container1}>
+      <ImageBackground 
+        style={styles.image_welcome}
+        source={require('../img/home_welcome.jpg')}
+      >
+        <Text style={styles.text_welcome}> Bem-vindo! </Text>
+      </ImageBackground>
 
-        <Button 
-          onPress={() => {
-          alert("Tela de informação");
-          }}
-          style={styles.button_welcome}
-          title="Inicie sua aventura pela computação">
-        </Button>
+      <Button 
+        onPress={() => navigation.navigate('Exploracao')}
+        style={styles.button_welcome}
+        title="Inicie sua aventura pela computação">
+      </Button>
 
-        <View style={styles.container2}>
-          <View style={styles.container3}>
-          <Text style={styles.header}> Dica do dia: [ícone de lâmpada] </Text>
-          <Image
-            style={styles.image_dica}
-            source={require('../img/lampada_dica.png')}
-          />
-          </View>
-          <Text style={styles.text}> [Dica com bela imagem fosca atrás] </Text>
+      <View style={styles.container2}>
+        <View style={styles.container3}>
+        <Text style={styles.header}> Dica do dia: [ícone de lâmpada] </Text>
+        <Image
+          style={styles.image_dica}
+          source={require('../img/lampada_dica.png')}
+        />
         </View>
+        <Text style={styles.text}> [Dica com bela imagem fosca atrás] </Text>
       </View>
-    );
-  }
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
@@ -88,12 +84,12 @@ const styles = StyleSheet.create({
   
   text: {
     color : "#000000",
-    fontSize: 20,
+    fontSize: 16
   },
 
   header: {
     textAlign: "center",
     color : "#000000",
-    fontSize: 25
+    fontSize: 20
   }
 });
