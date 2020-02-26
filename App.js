@@ -25,6 +25,22 @@ const App: () => React$Node = () => {
             name="Exploracao"
             component={TelaExploracao}
           />
+          <Stack.Screen
+            name="Arte"
+            component={TelaArte}
+          />
+          <Stack.Screen
+            name="Historia"
+            component={TelaHistoria}
+          />
+          <Stack.Screen
+            name="Profissional"
+            component={TelaProfissional}
+          />
+          <Stack.Screen
+            name="Curiosidades"
+            component={TelaCuriosidades}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     </>

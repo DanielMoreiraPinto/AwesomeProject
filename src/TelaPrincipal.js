@@ -26,7 +26,7 @@ export function TelaPrincipal({navigation}) {
 
       <View style={styles.container2}>
         <View style={styles.container3}>
-        <Text style={styles.header}> Dica do dia: [ícone de lâmpada] </Text>
+        <Text style={styles.header}> Dica do dia: </Text>
         <Image
           style={styles.image_dica}
           source={require('../img/lampada_dica.png')}
@@ -79,7 +79,9 @@ const styles = StyleSheet.create({
   },
 
   container3: {
-    
+    /*flex: 1,*/
+    flexDirection: "row",
+    justifyContent: "space-between",
   },
   
   text: {

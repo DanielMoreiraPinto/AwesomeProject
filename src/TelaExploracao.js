@@ -5,37 +5,29 @@ import {
   Button,
 } from 'react-native';
 
-export function TelaExploracao() {
+export function TelaExploracao({navigation}) {
     return (
         <View style={styles.container1}>
             <Button
-                onPress={() => {
-                alert("Tela de arte");
-                }}
+                onPress={() => navigation.navigate('Arte')}
                 title="A arte"
                 style={styles.botao}
             >
             </Button>
             <Button
-                onPress={() => {
-                alert("Tela de história");
-                }}
+                onPress={() => navigation.navigate('Historia')}
                 title="A história"
                 style={styles.botao}
             >
             </Button>
             <Button
-                onPress={() => {
-                alert("Tela do profissional");
-                }}
+                onPress={() => navigation.navigate('Profissional')}
                 title="O profissional"
                 style={styles.botao}
             >
             </Button>
             <Button
-                onPress={() => {
-                alert("Tela das curiosidades");
-                }}
+                onPress={() => navigation.navigate('Curiosidades')}
                 title="Curiosidades"
                 style={styles.botao}
             >
