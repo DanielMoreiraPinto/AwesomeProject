@@ -1,21 +1,21 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import TelaPrincipal from './src/telas_estrutura/TelaPrincipal'; 
-import {TelaExploracao} from './src/telas_estrutura/TelaExploracao';
+import TelaExploracao from './src/telas_estrutura/TelaExploracao';
 
-import {TelaArte} from './src/telas_informacao/telas_arte/TelaArte';
+import TelaArte from './src/telas_informacao/telas_arte/TelaArte';
 import {TelaArteJogo} from './src/telas_informacao/telas_arte/TelaArteJogo';
 import {TelaArteRcmds} from './src/telas_informacao/telas_arte/TelaArteRcmds';
 
-import {TelaHistoria} from './src/telas_informacao/telas_historia/TelaHistoria';
+import TelaHistoria from './src/telas_informacao/telas_historia/TelaHistoria';
 import {TelaHistoriaJogo} from './src/telas_informacao/telas_historia/TelaHistoriaJogo';
 import {TelaHistoriaRcmds} from './src/telas_informacao/telas_historia/TelaHistoriaRcmds';
 
-import {TelaProfissional} from './src/telas_informacao/telas_profissional/TelaProfissional';
+import TelaProfissional from './src/telas_informacao/telas_profissional/TelaProfissional';
 import {TelaProfissionalJogo} from './src/telas_informacao/telas_profissional/TelaProfissionalJogo';
 import {TelaProfissionalRcmds} from './src/telas_informacao/telas_profissional/TelaProfissionalRcmds';
 
-import {TelaCuriosidades} from './src/telas_informacao/telas_curiosidades/TelaCuriosidades';
+import TelaCuriosidades from './src/telas_informacao/telas_curiosidades/TelaCuriosidades';
 import {TelaCuriosidadesJogo} from './src/telas_informacao/telas_curiosidades/TelaCuriosidadesJogo';
 import {TelaCuriosidadesRcmds} from './src/telas_informacao/telas_curiosidades/TelaCuriosidadesRcmds';
 
@@ -94,11 +94,11 @@ function TelaTabCuriosidades() {
         component={TelaCuriosidades}
       />
       <TabCuriosidades.Screen
-        name="Fixar"
+        name="Advinhe"
         component={TelaCuriosidadesJogo}
       />
       <TabCuriosidades.Screen
-        name="Mais"
+        name="Encontre"
         component={TelaCuriosidadesRcmds}
       />
     </TabCuriosidades.Navigator>
@@ -124,13 +124,13 @@ const App: () => React$Node = () => {
           <Stack.Screen
             name="Arte"
             component={TelaTabArte}
-            options={{title: "A Arte"}}
+            options={{title: "A Arte da Computação"}}
           />
 
           <Stack.Screen
             name="Historia"
             component={TelaTabHistoria}
-            options={{title: "A História"}}
+            options={{title: "A História da Computação"}}
           />
 
           <Stack.Screen

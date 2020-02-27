@@ -1,4 +1,4 @@
-import React,{Component} from 'react'
+import React from 'react'
 import {
   StyleSheet,
   View,
@@ -6,14 +6,9 @@ import {
   SectionList,
 } from 'react-native';
 
-export function TelaArte() {
+export default () => {
   return (
-    <View style={styles.container1}> 
-      <Text style={styles.header1}> A Arte da Computação </Text>
-      <View style={styles.container2}>
-        <Text style={styles.text1}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis magna lacinia felis lobortis vehicula sed sed odio. Etiam tristique, mi sit amet viverra auctor, quam mi tempus mauris, at aliquam ex augue vitae ante. Ut ornare tempus egestas. </Text>
-      </View>
-      <View style={styles.container3}>
+    <View style={styles.container}>
       <SectionList
         sections={[
         {
@@ -29,48 +24,45 @@ export function TelaArte() {
           data: ["Phasellus sagittis mollis ultrices. Maecenas sed venenatis tortor, at dictum nunc. Suspendisse lorem nisl, gravida et lorem sed, ullamcorper venenatis risus. Pellentesque finibus tellus non risus gravida, lobortis blandit nulla euismod. Vestibulum congue ipsum sem, eu convallis nisl dignissim et."]
         }
         ]}
-        renderItem={({item}) => <Text style={styles.text1}>{item}</Text>}
-        renderSectionHeader={({section}) => <Text style={styles.header2}>{section.title}</Text>}
+        renderSectionHeader={({section}) => 
+          <View style={styles.titleContainer}>
+            <Text style={styles.titleText}>{section.title}</Text>
+          </View>
+        }
+        renderItem={({item}) => 
+            <View style={styles.itemContainer}>
+              <Text style={styles.itemText}>{item}</Text>
+            </View> 
+        }
         keyExtractor={(item, index) => index}
       />
-      </View>
-    </View>
+    </View>  
   );
 }
 
 const styles = StyleSheet.create({
-  container1: {
+  container: {
     flex: 1,
-    alignItems: "center"
+    backgroundColor: "#ffffff"
   },
-  
-  container2: {
-    flex: 1,
-    flexWrap: "wrap",
-    alignContent: "flex-start",
-    flexDirection: "row",
-    margin: 10
+
+  titleContainer: {
+    borderBottomWidth: 2,
+    borderBottomColor: "#2017a3",
+    marginHorizontal: 5
   },
-  
-  container3: {
-    flex: 3,
-    alignItems: "center",
-    margin: 10
+
+  titleText: {
+    fontSize: 24
   },
-  
-  text1: {
-    textAlign: "justify",
+
+  itemContainer: {
+    marginBottom: 10,
+    marginHorizontal: 5
+  },
+
+  itemText: {
     fontSize: 16,
-    color : "#000000" 
-  },
-  
-  header1: {
-    fontSize: 30, 
-    color : "#000000"
-  },
-  
-  header2: {
-    fontSize: 20, 
-    color : "#000000"
+    textAlign: "justify"
   }
 })

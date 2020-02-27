@@ -2,49 +2,56 @@ import React from 'react'
 import {
   StyleSheet,
   View,
-  Button,
+  TouchableHighlight,
+  Text
 } from 'react-native';
 
-export function TelaExploracao({navigation}) {
-    return (
-        <View style={styles.container1}>
-            <Button
-                onPress={() => navigation.navigate('Arte')}
-                title="A arte"
-                style={styles.botao}
-            >
-            </Button>
-            <Button
-                onPress={() => navigation.navigate('Historia')}
-                title="A história"
-                style={styles.botao}
-            >
-            </Button>
-            <Button
-                onPress={() => navigation.navigate('Profissional')}
-                title="O profissional"
-                style={styles.botao}
-            >
-            </Button>
-            <Button
-                onPress={() => navigation.navigate('Curiosidades')}
-                title="Curiosidades"
-                style={styles.botao}
-            >
-            </Button>
+export default ({navigation}) => {
+    return(
+        <View style={styles.container}>
+            <TouchableHighlight onPress={() => navigation.navigate('Arte')}>
+                <View style={styles.button}>
+                    <Text style={styles.buttonText}>A Arte</Text>
+                </View>
+            </TouchableHighlight>
+            <TouchableHighlight onPress={() => navigation.navigate('Historia')}>
+                <View style={styles.button}>
+                    <Text style={styles.buttonText}>A História</Text>
+                </View>
+            </TouchableHighlight>
+            <TouchableHighlight onPress={() => navigation.navigate('Profissional')}>
+                <View style={styles.button}>
+                    <Text style={styles.buttonText}>O Profissional</Text>
+                </View>
+            </TouchableHighlight>
+            <TouchableHighlight onPress={() => navigation.navigate('Curiosidades')}>
+                <View style={styles.button}>
+                    <Text style={styles.buttonText}>Curiosidades</Text>
+                </View>
+            </TouchableHighlight>
         </View>
     );
-    
 }
 
 const styles = StyleSheet.create({
-    botao: {
-        color: "#0a0f52"
-    },
-    
-    container1: {
+    container: {
         flex: 1,
-        justifyContent: "space-around",
-        alignItems: "center"
+        backgroundColor: "#d9d9db",
+        alignItems:"center",
+        justifyContent: "space-around"
+    },
+
+    button: {
+        height: 40,
+        width: 200,
+        backgroundColor: "#2017a3",
+        justifyContent: "center",
+        alignItems: "center",
+        borderRadius: 10
+    },
+
+    buttonText: {
+        fontSize: 16,
+        color: "#ffffff"
     }
 })
