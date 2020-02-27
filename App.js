@@ -21,8 +21,89 @@ import {TelaCuriosidadesRcmds} from './src/telas_informacao/telas_curiosidades/T
 
 import {NavigationContainer} from '@react-navigation/native'
 import {createStackNavigator} from '@react-navigation/stack';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 const Stack = createStackNavigator();
+const TabArte = createBottomTabNavigator();
+const TabHistoria = createBottomTabNavigator();
+const TabProfissional = createBottomTabNavigator();
+const TabCuriosidades = createBottomTabNavigator();
+
+function TelaTabArte() {
+  return (
+    <TabArte.Navigator>
+      <TabArte.Screen 
+        name="Info"
+        component={TelaArte}
+      />
+      <TabArte.Screen
+        name="Fixar"
+        component={TelaArteJogo}
+      />
+      <TabArte.Screen
+        name="Mais"
+        component={TelaArteRcmds}
+      />
+    </TabArte.Navigator>
+  );
+}
+
+function TelaTabHistoria() {
+  return (
+    <TabHistoria.Navigator>
+      <TabHistoria.Screen 
+        name="Info"
+        component={TelaHistoria}
+      />
+      <TabHistoria.Screen
+        name="Fixar"
+        component={TelaHistoriaJogo}
+      />
+      <TabHistoria.Screen
+        name="Mais"
+        component={TelaHistoriaRcmds}
+      />
+    </TabHistoria.Navigator>
+  );
+}
+
+function TelaTabProfissional() {
+  return (
+    <TabProfissional.Navigator>
+      <TabProfissional.Screen 
+        name="Info"
+        component={TelaProfissional}
+      />
+      <TabProfissional.Screen
+        name="Fixar"
+        component={TelaProfissionalJogo}
+      />
+      <TabProfissional.Screen
+        name="Mais"
+        component={TelaProfissionalRcmds}
+      />
+    </TabProfissional.Navigator>
+  );
+}
+
+function TelaTabCuriosidades() {
+  return (
+    <TabCuriosidades.Navigator>
+      <TabCuriosidades.Screen 
+        name="Info"
+        component={TelaCuriosidades}
+      />
+      <TabCuriosidades.Screen
+        name="Fixar"
+        component={TelaCuriosidadesJogo}
+      />
+      <TabCuriosidades.Screen
+        name="Mais"
+        component={TelaCuriosidadesRcmds}
+      />
+    </TabCuriosidades.Navigator>
+  );
+}
 
 const App: () => React$Node = () => {
   return (
@@ -36,58 +117,31 @@ const App: () => React$Node = () => {
           <Stack.Screen
             name="Exploracao"
             component={TelaExploracao}
+            options={{title: "Exploração"}}
           />
 
           <Stack.Screen
             name="Arte"
-            component={TelaArte}
-          />
-          <Stack.Screen
-            name="ArteJogo"
-            component={TelaArteJogo}
-          />
-          <Stack.Screen
-            name="ArteRcmds"
-            component={TelaArteRcmds}
+            component={TelaTabArte}
+            options={{title: "A Arte"}}
           />
 
           <Stack.Screen
             name="Historia"
-            component={TelaHistoria}
-          />
-          <Stack.Screen
-            name="HistoriaJogo"
-            component={TelaHistoriaJogo}
-          />
-          <Stack.Screen
-            name="HistoriaRcmds"
-            component={TelaHistoriaRcmds}
+            component={TelaTabHistoria}
+            options={{title: "A História"}}
           />
 
           <Stack.Screen
             name="Profissional"
-            component={TelaProfissional}
-          />
-          <Stack.Screen
-            name="ProfissionalJogo"
-            component={TelaProfissionalJogo}
-          />
-          <Stack.Screen
-            name="ProfissionalRcmds"
-            component={TelaProfissionalRcmds}
+            component={TelaTabProfissional}
+            options={{title: "O Profissional"}}
           />
 
           <Stack.Screen
             name="Curiosidades"
-            component={TelaCuriosidades}
-          />
-          <Stack.Screen
-            name="CuriosidadesJogo"
-            component={TelaCuriosidadesJogo}
-          />
-          <Stack.Screen
-            name="CuriosidadesRcmds"
-            component={TelaCuriosidadesRcmds}
+            component={TelaTabCuriosidades}
+            options={{title: "Curiosidades"}}
           />
         </Stack.Navigator>
       </NavigationContainer>
