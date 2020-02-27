@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import {TelaPrincipal} from './src/telas_estrutura/TelaPrincipal'; 
+import TelaPrincipal from './src/telas_estrutura/TelaPrincipal'; 
 import {TelaExploracao} from './src/telas_estrutura/TelaExploracao';
 
 import {TelaArte} from './src/telas_informacao/telas_arte/TelaArte';
@@ -109,10 +109,11 @@ const App: () => React$Node = () => {
   return (
     <>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="Principal">
+        <Stack.Navigator initialRouteName="Inicio">
           <Stack.Screen 
-            name="Principal"
-            component={TelaPrincipal} 
+            name="Inicio"
+            component={TelaPrincipal}
+            options={{title: "Início"}} 
           />
           <Stack.Screen
             name="Exploracao"
