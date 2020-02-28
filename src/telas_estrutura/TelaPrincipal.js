@@ -5,7 +5,8 @@ import {
   Text,
   Image,
   ImageBackground,
-  TouchableHighlight
+  TouchableHighlight,
+  TouchableWithoutFeedback
 } from 'react-native';
 
 export default ({navigation}) => {
@@ -20,6 +21,11 @@ export default ({navigation}) => {
           </ImageBackground>
       </View>
       <View style={styles.middle}>
+        <TouchableWithoutFeedback onPress={() => navigation.navigate('Sobre')}>
+                    <Image
+                      source={require('../../assets/img/icone_sobre.png')}
+                    />
+                  </TouchableWithoutFeedback>
         <TouchableHighlight onPress={() => navigation.navigate('Exploracao')}>
           <View style={styles.mainButton}>
             <Text style={styles.mainButtonText}> Inicie sua aventura pela Computação </Text>
@@ -72,7 +78,7 @@ const styles = StyleSheet.create({
   middle: {
     flex: 1,
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "space-around"
   },
 
   mainButton: {

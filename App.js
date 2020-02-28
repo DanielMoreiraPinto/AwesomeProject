@@ -1,7 +1,11 @@
 import 'react-native-gesture-handler';
 import React from 'react';
+import {
+  Image
+} from 'react-native';
 import TelaPrincipal from './src/telas_estrutura/TelaPrincipal'; 
 import TelaExploracao from './src/telas_estrutura/TelaExploracao';
+import TelaSobre from './src/telas_estrutura/TelaSobre';
 
 import TelaArte from './src/telas_informacao/telas_arte/TelaArte';
 import TelaArteJogo from './src/telas_informacao/telas_arte/TelaArteJogo';
@@ -19,9 +23,11 @@ import TelaCuriosidades from './src/telas_informacao/telas_curiosidades/TelaCuri
 import TelaCuriosidadesJogo from './src/telas_informacao/telas_curiosidades/TelaCuriosidadesJogo';
 import TelaCuriosidadesRcmds from './src/telas_informacao/telas_curiosidades/TelaCuriosidadesRcmds';
 
-import {NavigationContainer} from '@react-navigation/native'
+import {NavigationContainer, useNavigation} from '@react-navigation/native'
 import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 
 const Stack = createStackNavigator();
 const TabArte = createBottomTabNavigator();
@@ -113,7 +119,14 @@ const App: () => React$Node = () => {
           <Stack.Screen 
             name="Inicio"
             component={TelaPrincipal}
-            options={{title: "Início"}} 
+            options={{
+              title: "Início",
+            }} 
+          />
+          <Stack.Screen
+            name="Sobre"
+            component={TelaSobre}
+            options={{title: "Sobre o aplicativo"}}
           />
           <Stack.Screen
             name="Exploracao"
