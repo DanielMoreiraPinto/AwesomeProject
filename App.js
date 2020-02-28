@@ -42,14 +42,29 @@ function TelaTabArte() {
       <TabArte.Screen 
         name="Info"
         component={TelaArte}
+        options={{
+          tabBarIcon: () => (
+            <Image source={require('./assets/img/icone_info.png')}/>
+          ),
+        }}
       />
       <TabArte.Screen
         name="Fixar"
         component={TelaArteJogo}
+        options={{
+          tabBarIcon: () => (
+            <Image source={require('./assets/img/icone_fixar.png')}/>
+          ),
+        }}
       />
       <TabArte.Screen
         name="Mais"
         component={TelaArteRcmds}
+        options={{
+          tabBarIcon: () => (
+            <Image source={require('./assets/img/icone_mais.png')}/>
+          ),
+        }}
       />
     </TabArte.Navigator>
   );
@@ -61,14 +76,29 @@ function TelaTabHistoria() {
       <TabHistoria.Screen 
         name="Info"
         component={TelaHistoria}
+        options={{
+          tabBarIcon: () => (
+            <Image source={require('./assets/img/icone_info.png')}/>
+          ),
+        }}
       />
       <TabHistoria.Screen
         name="Fixar"
         component={TelaHistoriaJogo}
+        options={{
+          tabBarIcon: () => (
+            <Image source={require('./assets/img/icone_fixar.png')}/>
+          ),
+        }}
       />
       <TabHistoria.Screen
         name="Mais"
         component={TelaHistoriaRcmds}
+        options={{
+          tabBarIcon: () => (
+            <Image source={require('./assets/img/icone_mais.png')}/>
+          ),
+        }}
       />
     </TabHistoria.Navigator>
   );
@@ -80,14 +110,29 @@ function TelaTabProfissional() {
       <TabProfissional.Screen 
         name="Info"
         component={TelaProfissional}
+        options={{
+          tabBarIcon: () => (
+            <Image source={require('./assets/img/icone_info.png')}/>
+          ),
+        }}
       />
       <TabProfissional.Screen
         name="Fixar"
         component={TelaProfissionalJogo}
+        options={{
+          tabBarIcon: () => (
+            <Image source={require('./assets/img/icone_fixar.png')}/>
+          ),
+        }}
       />
       <TabProfissional.Screen
         name="Mais"
         component={TelaProfissionalRcmds}
+        options={{
+          tabBarIcon: () => (
+            <Image source={require('./assets/img/icone_mais.png')}/>
+          ),
+        }}
       />
     </TabProfissional.Navigator>
   );
@@ -99,14 +144,29 @@ function TelaTabCuriosidades() {
       <TabCuriosidades.Screen 
         name="Info"
         component={TelaCuriosidades}
+        options={{
+          tabBarIcon: () => (
+            <Image source={require('./assets/img/icone_info.png')}/>
+          ),
+        }}
       />
       <TabCuriosidades.Screen
         name="Advinhe"
         component={TelaCuriosidadesJogo}
+        options={{
+          tabBarIcon: () => (
+            <Image source={require('./assets/img/icone_fixar.png')}/>
+          ),
+        }}
       />
       <TabCuriosidades.Screen
         name="Encontre"
         component={TelaCuriosidadesRcmds}
+        options={{
+          tabBarIcon: () => (
+            <Image source={require('./assets/img/icone_mais.png')}/>
+          ),
+        }}
       />
     </TabCuriosidades.Navigator>
   );
