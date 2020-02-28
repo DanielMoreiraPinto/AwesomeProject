@@ -121,7 +121,8 @@ const styles = StyleSheet.create({
 
   hintContent: {
     flex: 2,
-    justifyContent: "center"
+    justifyContent: "center",
+    marginHorizontal: 5
   },
 
   hintContentText: {

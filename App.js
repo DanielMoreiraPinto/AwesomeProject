@@ -5,19 +5,19 @@ import TelaExploracao from './src/telas_estrutura/TelaExploracao';
 
 import TelaArte from './src/telas_informacao/telas_arte/TelaArte';
 import {TelaArteJogo} from './src/telas_informacao/telas_arte/TelaArteJogo';
-import {TelaArteRcmds} from './src/telas_informacao/telas_arte/TelaArteRcmds';
+import TelaArteRcmds from './src/telas_informacao/telas_arte/TelaArteRcmds';
 
 import TelaHistoria from './src/telas_informacao/telas_historia/TelaHistoria';
 import {TelaHistoriaJogo} from './src/telas_informacao/telas_historia/TelaHistoriaJogo';
-import {TelaHistoriaRcmds} from './src/telas_informacao/telas_historia/TelaHistoriaRcmds';
+import TelaHistoriaRcmds from './src/telas_informacao/telas_historia/TelaHistoriaRcmds';
 
 import TelaProfissional from './src/telas_informacao/telas_profissional/TelaProfissional';
 import {TelaProfissionalJogo} from './src/telas_informacao/telas_profissional/TelaProfissionalJogo';
-import {TelaProfissionalRcmds} from './src/telas_informacao/telas_profissional/TelaProfissionalRcmds';
+import TelaProfissionalRcmds from './src/telas_informacao/telas_profissional/TelaProfissionalRcmds';
 
 import TelaCuriosidades from './src/telas_informacao/telas_curiosidades/TelaCuriosidades';
 import {TelaCuriosidadesJogo} from './src/telas_informacao/telas_curiosidades/TelaCuriosidadesJogo';
-import {TelaCuriosidadesRcmds} from './src/telas_informacao/telas_curiosidades/TelaCuriosidadesRcmds';
+import TelaCuriosidadesRcmds from './src/telas_informacao/telas_curiosidades/TelaCuriosidadesRcmds';
 
 import {NavigationContainer} from '@react-navigation/native'
 import {createStackNavigator} from '@react-navigation/stack';

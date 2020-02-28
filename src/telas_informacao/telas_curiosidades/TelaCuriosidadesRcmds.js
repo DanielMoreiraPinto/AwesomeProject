@@ -1,20 +1,61 @@
 import React from 'react'
 import {
   StyleSheet,
-  View,
-  Text,
+  View
 } from 'react-native';
+import { FlatList } from 'react-native-gesture-handler';
+import Recomendacao from '../../components/Recomendacao'
 
-export function TelaCuriosidadesRcmds() {
+export default () => {
+  var recomendacoes = [
+    {
+      id: "1",
+      title: "Primeiro link",
+      link: "link",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tortor nisl, dignissim et turpis ac, ultrices tincidunt diam."
+    },
+    {
+      id: "2",
+      title: "Segundo link",
+      link: "link",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tortor nisl, dignissim et turpis ac, ultrices tincidunt diam."
+    },
+    {
+      id: "3",
+      title: "Terceiro link",
+      link: "link",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tortor nisl, dignissim et turpis ac, ultrices tincidunt diam."
+    },
+    {
+      id: "4",
+      title: "Quarto link",
+      link: "link",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tortor nisl, dignissim et turpis ac, ultrices tincidunt diam."
+    },
+  ]
+
   return(
-    <View>
-      <Text style={styles.Text1}>Vários links de recomendações</Text>
+    <View style={styles.container}>
+      <FlatList
+        data = {recomendacoes}
+        keyExtractor={recomendacao => recomendacao.id}
+        renderItem={({item}) => {
+          return(
+            <Recomendacao
+              title={item.title}
+              link={item.link}
+              text={item.text}
+            />
+          )
+        }}
+      />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  Text1: {
-    fontSize: 16
+  container: {
+    flex: 1,
+    backgroundColor: "#ffffff"
   }
 })
