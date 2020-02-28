@@ -2,55 +2,74 @@ import React from 'react'
 import {
   StyleSheet,
   View,
-  Button,
-  Text,
-  Alert,
+  FlatList
 } from 'react-native';
+import Questao from '../../components/Questao'
 
-export function TelaProfissionalJogo() {
+export default () => {
+  var questoes = [
+    {
+      id: "1",
+      question: "Mauris pellentesque erat nec ex cursus auctor non ac odio. Suspendisse eu lorem nec ipsum maximus gravida eu sed urna?",
+      option1: "Nulla gravida suscipit sollicitudin.",
+      option2: "Nulla gravida suscipit sollicitudin.",
+      option3: "Nulla gravida suscipit sollicitudin.",
+      option4: "Nulla gravida suscipit sollicitudin.",
+    },
+
+    {
+      id: "2",
+      question: "Mauris pellentesque erat nec ex cursus auctor non ac odio. Suspendisse eu lorem nec ipsum maximus gravida eu sed urna?",
+      option1: "Nulla gravida suscipit sollicitudin.",
+      option2: "Nulla gravida suscipit sollicitudin.",
+      option3: "Nulla gravida suscipit sollicitudin.",
+      option4: "Nulla gravida suscipit sollicitudin.",
+    },
+
+    {
+      id: "3",
+      question: "Mauris pellentesque erat nec ex cursus auctor non ac odio. Suspendisse eu lorem nec ipsum maximus gravida eu sed urna?",
+      option1: "Nulla gravida suscipit sollicitudin.",
+      option2: "Nulla gravida suscipit sollicitudin.",
+      option3: "Nulla gravida suscipit sollicitudin.",
+      option4: "Nulla gravida suscipit sollicitudin.",
+    },
+
+    {
+      id: "4",
+      question: "Mauris pellentesque erat nec ex cursus auctor non ac odio. Suspendisse eu lorem nec ipsum maximus gravida eu sed urna?",
+      option1: "Nulla gravida suscipit sollicitudin.",
+      option2: "Nulla gravida suscipit sollicitudin.",
+      option3: "Nulla gravida suscipit sollicitudin.",
+      option4: "Nulla gravida suscipit sollicitudin.",
+    },
+  ]
+  
   return (
-    <View>
-      <Text style={styles.Text1}> Perguuuuuuuuuuuuuuunta? </Text>
-      <Button
-        onPress={() => Alert.alert("Acertou?")}
-        title="Opção 1"
-      ></Button>
-      <Button
-        onPress={() => Alert.alert("Acertou?")}
-        title="Opção 2"
-      ></Button>
-      <Button
-        onPress={() => Alert.alert("Acertou?")}
-        title="Opção 3"
-      ></Button>
-      <Button
-        onPress={() => Alert.alert("Acertou?")}
-        title="Opção 4"
-      ></Button>
-
-      <Text style={styles.Text1}> Perguuuuuuuuuuuuuuunta? </Text>
-      <Button
-        onPress={() => Alert.alert("Acertou?")}
-        title="Opção 1"
-      ></Button>
-      <Button
-        onPress={() => Alert.alert("Acertou?")}
-        title="Opção 2"
-      ></Button>
-      <Button
-        onPress={() => Alert.alert("Acertou?")}
-        title="Opção 3"
-      ></Button>
-      <Button
-        onPress={() => Alert.alert("Acertou?")}
-        title="Opção 4"
-      ></Button>
+    <View style={styles.container}>
+      <FlatList
+        data = {questoes}
+        keyExtractor={questao => questao.id}
+        renderItem={({item}) => {
+          return(
+            <Questao
+              question={item.question}
+              option1={item.option1}
+              option2={item.option2}
+              option3={item.option3}
+              option4={item.option4}
+            />
+          )
+        }}
+      />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  Text1: {
-    fontSize: 20
+  container: {
+    flex: 1,
+    backgroundColor: "#ffffff",
+    alignItems: "center"
   }
 })
