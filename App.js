@@ -1,7 +1,8 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import {
-  Image
+  Image,
+  View
 } from 'react-native';
 import TelaPrincipal from './src/telas_estrutura/TelaPrincipal'; 
 import TelaExploracao from './src/telas_estrutura/TelaExploracao';

@@ -21,16 +21,18 @@ export default ({navigation}) => {
           </ImageBackground>
       </View>
       <View style={styles.middle}>
-        <TouchableWithoutFeedback onPress={() => navigation.navigate('Sobre')}>
-                    <Image
-                      source={require('../../assets/img/icone_sobre.png')}
-                    />
-                  </TouchableWithoutFeedback>
         <TouchableHighlight onPress={() => navigation.navigate('Exploracao')}>
           <View style={styles.mainButton}>
             <Text style={styles.mainButtonText}> Inicie sua aventura pela Computação </Text>
           </View>
         </TouchableHighlight>
+        <TouchableWithoutFeedback onPress={() => navigation.navigate('Sobre')}>
+                    <View>
+                    <Image
+                      source={require('../../assets/img/icone_sobre.png')}
+                    />
+                    </View>
+                  </TouchableWithoutFeedback>
       </View>
       <View style={styles.bottom}>
         <View style={styles.hintContainer}>
