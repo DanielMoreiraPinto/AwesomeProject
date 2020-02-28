@@ -7,7 +7,6 @@ import {
   ImageBackground,
   TouchableHighlight,
   TouchableWithoutFeedback,
-  Animated
 } from 'react-native';
 
 export default ({navigation}) => {

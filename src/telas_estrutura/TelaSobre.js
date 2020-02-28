@@ -3,9 +3,7 @@ import {
   StyleSheet,
   View,
   Text,
-  Image,
   ImageBackground,
-  TouchableHighlight
 } from 'react-native';
 
 export default ({navigation}) => {

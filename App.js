@@ -1,8 +1,7 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import {
-  Image,
-  View
+  Image
 } from 'react-native';
 import TelaPrincipal from './src/telas_estrutura/TelaPrincipal'; 
 import TelaExploracao from './src/telas_estrutura/TelaExploracao';
@@ -24,11 +23,9 @@ import TelaCuriosidades from './src/telas_informacao/telas_curiosidades/TelaCuri
 import TelaCuriosidadesJogo from './src/telas_informacao/telas_curiosidades/TelaCuriosidadesJogo';
 import TelaCuriosidadesRcmds from './src/telas_informacao/telas_curiosidades/TelaCuriosidadesRcmds';
 
-import {NavigationContainer, useNavigation} from '@react-navigation/native'
+import {NavigationContainer} from '@react-navigation/native'
 import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import { createDrawerNavigator } from '@react-navigation/drawer';
-import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 
 const Stack = createStackNavigator();
 const TabArte = createBottomTabNavigator();
