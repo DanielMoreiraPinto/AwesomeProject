@@ -10,20 +10,20 @@ export default () => {
   var questoes = [
     {
       id: "1",
-      question: "Mauris pellentesque erat nec ex cursus auctor non ac odio. Suspendisse eu lorem nec ipsum maximus gravida eu sed urna?",
-      option1: "Nulla gravida suscipit sollicitudin.",
-      option2: "Nulla gravida suscipit sollicitudin.",
-      option3: "Nulla gravida suscipit sollicitudin.",
-      option4: "Nulla gravida suscipit sollicitudin.",
+      question: "Adivinha que animal está na logo do navegador Firefox.",
+      option1: "Um panda vermelho",
+      option2: "Uma raposa",
+      option3: "Um furão",
+      option4: "Um lobo-guará",
     },
 
     {
       id: "2",
-      question: "Mauris pellentesque erat nec ex cursus auctor non ac odio. Suspendisse eu lorem nec ipsum maximus gravida eu sed urna?",
-      option1: "Nulla gravida suscipit sollicitudin.",
-      option2: "Nulla gravida suscipit sollicitudin.",
-      option3: "Nulla gravida suscipit sollicitudin.",
-      option4: "Nulla gravida suscipit sollicitudin.",
+      question: "Adivinha quanto tempo demorou para a primeira câmera de celular tirar uma foto.",
+      option1: "30 minutos",
+      option2: "1 hora",
+      option3: "15 minutos",
+      option4: "8 horas",
     },
 
     {

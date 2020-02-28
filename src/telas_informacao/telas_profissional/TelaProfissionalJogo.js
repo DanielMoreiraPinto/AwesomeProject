@@ -10,20 +10,20 @@ export default () => {
   var questoes = [
     {
       id: "1",
-      question: "Mauris pellentesque erat nec ex cursus auctor non ac odio. Suspendisse eu lorem nec ipsum maximus gravida eu sed urna?",
-      option1: "Nulla gravida suscipit sollicitudin.",
-      option2: "Nulla gravida suscipit sollicitudin.",
-      option3: "Nulla gravida suscipit sollicitudin.",
-      option4: "Nulla gravida suscipit sollicitudin.",
+      question: "Qual dessas características é a mais importante num programador?",
+      option1: "Audácia",
+      option2: "Extrovertismo",
+      option3: "Oratória",
+      option4: "Criatividade",
     },
 
     {
       id: "2",
-      question: "Mauris pellentesque erat nec ex cursus auctor non ac odio. Suspendisse eu lorem nec ipsum maximus gravida eu sed urna?",
-      option1: "Nulla gravida suscipit sollicitudin.",
-      option2: "Nulla gravida suscipit sollicitudin.",
-      option3: "Nulla gravida suscipit sollicitudin.",
-      option4: "Nulla gravida suscipit sollicitudin.",
+      question: "Qual desses campos é bem recomendado para o programador?",
+      option1: "Datilografia",
+      option2: "Álgebra",
+      option3: "Atalhos de teclado",
+      option4: "Relações públicas",
     },
 
     {

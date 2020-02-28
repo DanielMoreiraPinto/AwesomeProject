@@ -10,20 +10,20 @@ export default () => {
   var questoes = [
     {
       id: "1",
-      question: "Mauris pellentesque erat nec ex cursus auctor non ac odio. Suspendisse eu lorem nec ipsum maximus gravida eu sed urna?",
-      option1: "Nulla gravida suscipit sollicitudin.",
-      option2: "Nulla gravida suscipit sollicitudin.",
-      option3: "Nulla gravida suscipit sollicitudin.",
-      option4: "Nulla gravida suscipit sollicitudin.",
+      question: "Qual a mais antiga ferramenta utilizada em coputação?",
+      option1: "A calculadora",
+      option2: "A Máquina Analítica",
+      option3: "O ábaco",
+      option4: "O computador do meu tio",
     },
 
     {
       id: "2",
-      question: "Mauris pellentesque erat nec ex cursus auctor non ac odio. Suspendisse eu lorem nec ipsum maximus gravida eu sed urna?",
-      option1: "Nulla gravida suscipit sollicitudin.",
-      option2: "Nulla gravida suscipit sollicitudin.",
-      option3: "Nulla gravida suscipit sollicitudin.",
-      option4: "Nulla gravida suscipit sollicitudin.",
+      question: "Em que país os logaritmos foram inventados?",
+      option1: "Índia",
+      option2: "Itália",
+      option3: "China",
+      option4: "França",
     },
 
     {

@@ -10,20 +10,20 @@ export default () => {
   var questoes = [
     {
       id: "1",
-      question: "Mauris pellentesque erat nec ex cursus auctor non ac odio. Suspendisse eu lorem nec ipsum maximus gravida eu sed urna?",
-      option1: "Nulla gravida suscipit sollicitudin.",
-      option2: "Nulla gravida suscipit sollicitudin.",
-      option3: "Nulla gravida suscipit sollicitudin.",
-      option4: "Nulla gravida suscipit sollicitudin.",
+      question: "Um algoritmo é, conceitualmente, um conjunto de quê?",
+      option1: "Regras",
+      option2: "Processos",
+      option3: "Códigos",
+      option4: "Palavras em inglês",
     },
 
     {
       id: "2",
-      question: "Mauris pellentesque erat nec ex cursus auctor non ac odio. Suspendisse eu lorem nec ipsum maximus gravida eu sed urna?",
-      option1: "Nulla gravida suscipit sollicitudin.",
-      option2: "Nulla gravida suscipit sollicitudin.",
-      option3: "Nulla gravida suscipit sollicitudin.",
-      option4: "Nulla gravida suscipit sollicitudin.",
+      question: "A Computação é a busca de quê?",
+      option1: "Da solução de cálculos matemáticos",
+      option2: "Da criação da inteligência artificial",
+      option3: "De uma solução para um problema",
+      option4: "Da imortalidade",
     },
 
     {
