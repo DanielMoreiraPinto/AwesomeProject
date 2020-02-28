@@ -27,12 +27,12 @@ export default ({navigation}) => {
           </View>
         </TouchableHighlight>
         <TouchableWithoutFeedback onPress={() => navigation.navigate('Sobre')}>
-                    <View>
-                    <Image
-                      source={require('../../assets/img/icone_sobre.png')}
-                    />
-                    </View>
-                  </TouchableWithoutFeedback>
+          <View>
+            <Image
+             source={require('../../assets/img/icone_sobre.png')}
+           />
+          </View>
+        </TouchableWithoutFeedback>
       </View>
       <View style={styles.bottom}>
         <View style={styles.hintContainer}>
