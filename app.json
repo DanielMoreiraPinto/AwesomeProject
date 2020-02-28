@@ -1,4 +1,5 @@
 {
   "name": "AwesomeProject",
-  "displayName": "AwesomeProject"
+  "displayName": "ComputAção",
+  "icon": "./assets/img/icone.png"
 }
