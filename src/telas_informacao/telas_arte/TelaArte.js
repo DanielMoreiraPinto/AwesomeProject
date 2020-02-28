@@ -13,15 +13,15 @@ export default () => {
         sections={[
         {
           title: "Definição",
-          data: ["Phasellus sagittis mollis ultrices. Maecenas sed venenatis tortor, at dictum nunc. Suspendisse lorem nisl, gravida et lorem sed, ullamcorper venenatis risus. Pellentesque finibus tellus non risus gravida, lobortis blandit nulla euismod. Vestibulum congue ipsum sem, eu convallis nisl dignissim et."]
+          data: ["A computação é a busca de uma solução para um problema, a partir de entradas de dados (inputs), e pelo uso de algoritmos. É com isto que lida a teoria da computação, subcampo da ciência da computação e da matemática."]
         },
         {
           title: "As áreas a explorar",
-          data: ["Etiam imperdiet finibus erat non dignissim. Aliquam cursus pharetra purus, eu ornare felis condimentum vitae. Praesent sed est sit amet felis ullamcorper rutrum quis a augue. Maecenas bibendum ante cursus, lacinia ante eu, tincidunt velit. Vestibulum tortor purus, cursus sit amet suscipit scelerisque, porta vel ipsum. Donec mauris nisi, tempor a varius ac, consequat quis odio. Praesent luctus justo luctus dictum mollis. Morbi tempor eget est non ullamcorper."]
+          data: ["No curso de bacharelado em Ciências da Computação os alunos são levados a aprender mais sobre as necessidades de usuários e futuros clientes, para que possam elaborar, da melhor forma, programas para computadores ou outros dispositivos. Além do trabalho com software e aplicativos, nessa graduação são formados profissionais aptos a dar um bom gerenciamento a bancos de dados, sistemas para compra e venda e prestação de serviços aos usuários, como a assistência a eles.O curso de bacharelado em Engenharia da Computação é voltado para o estudo profundo dos sistemas computacionais. Nele o aluno aprende como construir da melhor maneira as peças, os equipamentos, sistemas de operação, acessórios, teclado, CPU, mouse… Para poder projetar computadores. Além dessa função, no mercado de trabalho, o profissional formado pode atuar com a projeção para outros produtos, como os ligados a periféricos de telefonia e robótica, ou mesmo no suporte a rede de computadores."]
         },
         {
           title: "O algoritmo",
-          data: ["Phasellus sagittis mollis ultrices. Maecenas sed venenatis tortor, at dictum nunc. Suspendisse lorem nisl, gravida et lorem sed, ullamcorper venenatis risus. Pellentesque finibus tellus non risus gravida, lobortis blandit nulla euismod. Vestibulum congue ipsum sem, eu convallis nisl dignissim et."]
+          data: ["Um algoritmo é uma sequência finita e não ambígua de instruções para solucionar um problema. Mais especificamente, em matemática, constitui o conjunto de processos (e símbolos que os representam) para efectuar um cálculo. Algoritmos podem ser implementados por programas de computadores."]
         }
         ]}
         renderSectionHeader={({section}) => 

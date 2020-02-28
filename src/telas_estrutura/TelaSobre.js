@@ -14,6 +14,7 @@ export default ({navigation}) => {
       <ImageBackground style={styles.background} source={require('../../assets/img/imagem_fundo_sobre.jpg')}
       imageStyle={{opacity:.2}}>
         <Text style={styles.texto}> Feito por Daniel Moreira Pinto </Text>
+        <Text style={styles.texto}> Dedicado ao PETComp UFMA </Text>
       </ImageBackground>
     </View>
   );
@@ -34,6 +35,6 @@ const styles = StyleSheet.create({
   },
 
   texto: {
-    fontSize: 16,
+    fontSize: 20,
   }
 })

@@ -13,15 +13,15 @@ export default () => {
         sections={[
         {
           title: "Traçando um perfil",
-          data: ["Phasellus sagittis mollis ultrices. Maecenas sed venenatis tortor, at dictum nunc. Suspendisse lorem nisl, gravida et lorem sed, ullamcorper venenatis risus. Pellentesque finibus tellus non risus gravida, lobortis blandit nulla euismod. Vestibulum congue ipsum sem, eu convallis nisl dignissim et."]
+          data: ["É importante que este profissional tenha raciocínio lógico, pois isto facilitará na hora do desenvolvimento de um sistema. Além disso, o programador deve gostar de aprender, ter bom nível de concentração, ser autodidata, curioso, disciplinado, paciente e persistente, além de sempre querer resolver um problema."]
         },
         {
           title: "Quebrando mitos",
-          data: ["Etiam imperdiet finibus erat non dignissim. Aliquam cursus pharetra purus, eu ornare felis condimentum vitae. Praesent sed est sit amet felis ullamcorper rutrum quis a augue. Maecenas bibendum ante cursus, lacinia ante eu, tincidunt velit. Vestibulum tortor purus, cursus sit amet suscipit scelerisque, porta vel ipsum. Donec mauris nisi, tempor a varius ac, consequat quis odio. Praesent luctus justo luctus dictum mollis. Morbi tempor eget est non ullamcorper."]
+          data: ["Aprender a programar é coisa de nerd? Esse é um dos mais famosos e absolutos MITOS da área da programação. Isso porque programar exige, como qualquer outro tema, aprendizado e dedicação. Mas não é preciso ser “um gênio” para exercer a profissão. Para programar, precisa entender de matemática? Nós até já falamos sobre isso aqui no blog. Um MITO também muito comum. Algumas pessoas confundem programação com matemática, mas as duas coisas são bem diferentes. O programador, na maior parte das vezes, utiliza códigos e o raciocínio lógico. Fazer isso não exige um grande conhecimento de vários campos da matemática. É importante ter algumas noções de álgebra, mas isso numa área muito básica do conhecimento."]
         },
         {
           title: "O mercado",
-          data: ["Phasellus sagittis mollis ultrices. Maecenas sed venenatis tortor, at dictum nunc. Suspendisse lorem nisl, gravida et lorem sed, ullamcorper venenatis risus. Pellentesque finibus tellus non risus gravida, lobortis blandit nulla euismod. Vestibulum congue ipsum sem, eu convallis nisl dignissim et."]
+          data: ["Uma boa notícia para quem pretende entrar nessa área: O mercado de trabalho para os programadores têm sido muito promissor e é crescente nos setores privado e público. Vale ressaltar que o sucesso na carreira depende do nível de especialização e da área de dedicação do profissional. Empresas públicas abrem concursos, que são muito procurados, mas as vagas costumam ser para cadastro e não para empregar efetivamente. Nesse caso o mercado está estável sem demissões e contratações."]
         }
         ]}
         renderSectionHeader={({section}) => 
